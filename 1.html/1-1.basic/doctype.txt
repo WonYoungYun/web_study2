@@ -1,0 +1,10 @@
+<!DOCTYPE html>//html 선언
+<html lang="ko">//
+<head>
+    <meta charset="UTF-8"> //문자 코드 셋은 타이틀 보다 먼저 써야한다.
+    <title>Doctype</title>
+</head>
+<body>
+    
+</body>
+</html>

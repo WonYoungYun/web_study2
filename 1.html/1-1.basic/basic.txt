@@ -1,0 +1,50 @@
+웹 표준이란?
+    www를 구현하기 위해 따라야 하는 규격
+        구조 계층 : HTML
+        표현 계층 : CSS
+        계층 동작 : JAVSCRIPT
+웹 접근성 연수고: wah.or.kr
+
+CSS따로, JS따로 구현 하고 html과 연결
+
+html 태그 작성 문법
+    대문자로 쓰지 않는다. 동작은 하지만 권유하지 않음
+    html5의 경우 종료가없는 태그(input, br)는 종료(/)를 넣어줘도 되지만 안넣어도 동작한다. xhtml에서는 반드시 넣어야 한다.
+    속성은 ""로 값을 할당
+    테이블의 경우 종료태그를 넣지 않아도 되지만, 넣어서 구분할 수 있도록 해준다.
+
+meta
+    https://support.google.com/webmasters/answer/79812?hl=ko //구글에서 이해할 수 있는 메타태그
+
+    name="keywords" content="" //이 웹페이지에서 대표되는 단어들을 ,로 나열
+    name="description" content=""//이 웹페이지에 대한 설명글 ***
+    name="author" content="" //저자 팀이름,회사이름
+    name="generator" content=""//이 웹사이트를 만들때 어떤 프레임워크를 썼는가.
+    name="robots" content="index, follow, all, nofollow, noindex, none"//검색엔진 관련 index는 현재 페이지가 검색되는 것을 허용, follow는 이 웹페이지에서 연결된 페이즈를 허용, robots.txt를 만들어 사용하는 방법도 있다.
+
+Open Graphic
+    meta property = "og:title" content="페이지 제목"
+    meta property = "og:url" content="http://사이트주소"
+    meta property = "og:image" content="http://띄울이미지"
+    meta property = "og:type" content="website"
+    meta property = "og:description" content="사이트 설명"
+    //카카오톡이나 소셜에서 링크를 보여줄때 그에 대한 상세 설정
+
+http-equiv
+    meat http-equiv="refresh" content="3; url=http://google.com/"
+    //3초뒤 지정한 url로 이동
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    //웹페이지를 IE 버전 중 가장 최신 모드로 표시
+
+
+viewport
+    meta name="viewport" content="width=device-width,initial-scale=1"
+    //모바일에서 웹을 보기위한 설정
+
+
+
+
+html템플릿 작성하기
+    코딩컨벤션에서 나온 가이드라인을 따르는 것이 도움이 된다.
+    본문의 영역을 id로 잡고 제일위에 그 부분으로 본문 바로가기를 만들어준다. tab키를 치면 본문바로가기가 focus //접근성에서 상당히 중요
+    위치를 찾기위해 시작과 종료를 구분해주는 것이 좋다 //<!--header-->, <!--//header-->
