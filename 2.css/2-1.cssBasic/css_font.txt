@@ -1,0 +1,65 @@
+글꼴
+    serif       명조
+    sans-serif  고딕
+    cursive     필기
+    monospace   고정폭
+
+
+    font-family
+        여러 폰트를 지정해주고, 폰트가 없다면 다른폰트로 대체할 수 있게 해야한다.
+
+    font-size
+        글자크기 지정, 웹페이지의 경우 보통 body 12px이 일반적
+        모든 폰트의 크기를 같게 만든 뒤, h1이나 h2에 대해 설정을 해줘서 글자 크기를 다르게 해주는것이 일반적
+
+    font-weight
+        글자의 두께 조정
+        bold, bolder, 600, 700, 800, 900
+        normal, lighter, 100, 200, 300, 400, 500
+
+    font-style
+        글자의 기울김, 등을 표현
+        normal, italic, oblique
+
+    font-variant:small-caps
+        소문자를 작은 대문자로 바꾼다.
+
+    letter-spacing:
+        글자 사이의 간격을 설정해준다.
+
+    line-height:
+        문단의 줄의 간격을 설정해준다.
+
+    text-align:
+        문단의 정렬을 설정해준다
+        left, right, center, justify
+
+    text-decoration
+        문장의 밑줄, 취소선, 윗줄 등에 대한 설정
+        underline, line-throught, overline
+
+    text-indent
+        문장의 들여쓰기, 내어쓰기에 대한 설정
+
+    text-transform
+        글자의 대문자, 소문자 등에 대한 설정
+        uppercase, lowercase, capitalize
+
+    vertical-align
+        문단의 영역내의 위아래 정렬
+        top, middle, baseline, bottom
+
+    white-space
+        스페이스와 탭, 줄바꿈, 자동줄바꿈을 어떻게 처리할지 정하는 속성
+        normal | nowrap | pre | pre-wrap | pre-line | initial | inherit
+
+    word-spacing
+        단어와 단어사이(띄어쓰기) 간격 조절
+    
+    @font-face
+        서체는 그 페이지를 보는 사람의 컴퓨터에 서체가 있어야 제대로 나온다. 해당서체가 없는경우 서버에 올려서 경로를 지정하면 서체를 표현할 수있다. 요새는 잘안씀
+    
+    google-font
+        https://fonts.google.com/ 에서 원하는 폰트를 가져와 연결
+        .css 파일에 import하여 넣은다음 css파일을 불러와 적용하는 것으로 사용
+    

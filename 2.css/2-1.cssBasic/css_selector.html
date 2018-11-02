@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Basic</title>
+    <style>
+        body{
+            color:#333;
+        }
+        h1{
+            color:blue;
+        }
+        .lead{
+            color:green;
+        }
+        #lead{
+            background-color: purple;
+        }
+        h1, p{
+            text-decoration: underline;
+        }
+        #header p {
+            border: 5px solid #cccccc;
+        }
+        #header > p {
+            color:black;
+        }
+        .list li + li{
+            background-color:lightblue
+        }
+        a[title]{
+            color:tomato;
+        }
+        a{
+            color: #888;
+            text-decoration: none;
+        }
+        a:hover, a:active, a:focus{
+            color:red;
+            text-decoration: underline;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <h1 style="color:red"> css basic</h1>
+            <div><p>Lorem, ipsum dolor.</p></div>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <div id="contents">      
+            <p class="lead">Lorem, ipsum.</p>
+            <p>Lorem, ipsum dolor.</p>
+            <p id="lead">Lorem ipsum dolor sit amet.</p>
+            <ol class="list">
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem, ipsum.</li>
+                <li>Lorem ipsum dolor sit amet consectetur.</li>
+            </ol>
+            <ul>
+                <li><a href="#">Lorem, ipsum.</a></li>
+                <li><a href="#" title="this">Lorem, ipsum.</a></li>
+                <li><a href="#">Lorem.</a></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>word-break, white space</title>
+    <style>
+        body{
+            font-size:16px;
+        }
+        #contents, #contents2, #contents3{
+            width: 500px;
+            border:1px solid black;
+        }
+        #contents p{
+            word-break: break-all;
+        }
+        #contents2 p{
+            text-align: justify;
+        }
+        #contents3 p{
+            text-align: justify;
+            word-break: break-all;
+        }
+        #white{
+            width: 400px;
+            border:1px solid gray;
+            white-space: pre;
+        }
+        #white2{
+            width: 400px;
+            border:1px solid gray;
+            white-space: pre-wrap;
+        }
+        #white3{
+            width: 400px;
+            border:1px solid gray;
+            white-space: pre-line;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="contents">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum incidunt cupiditate in similique exercitationem doloremque praesentium quam ipsum culpa atque?</p>
+    </div>
+    <div id="contents2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem numquam obcaecati aliquid blanditiis explicabo animi quasi laudantium magnam nostrum fugit aspernatur, sed cum quo maxime cumque perferendis vel quod similique ipsa modi tempora! Quod, saepe harum et libero, doloremque molestias nesciunt similique porro, cum atque adipisci nisi laudantium! Natus, sequi.</p>
+    </div>
+    <div id="contents3">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem numquam obcaecati aliquid blanditiis explicabo animi quasi laudantium magnam nostrum fugit aspernatur, sed cum quo maxime cumque perferendis vel quod similique ipsa modi tempora! Quod, saepe harum et libero, doloremque molestias nesciunt similique porro, cum atque adipisci nisi laudantium! Natus, sequi.</p>
+    </div>
+    <hr>
+    <div id="white">
+        Lorem,
+        ipsum dolor sit amet consectetur adipisicing elit.
+        Sapiente, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, laboriosam.
+    </div>
+    <div id="white2">
+        Lorem,
+        ipsum dolor sit amet consectetur adipisicing elit.
+        Sapiente, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, laboriosam.
+    </div>
+    <div id="white3">
+        Lorem,
+        ipsum dolor sit amet consectetur adipisicing elit.
+        Sapiente, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, laboriosam.
+    </div>
+</body>
+</html>

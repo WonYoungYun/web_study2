@@ -1,0 +1,19 @@
+리스트 스타일링
+    list-style: none
+        리스트 속성의 스타일(점, 등등) 에 대한 설정
+        상속이 되기때문에 ul에 넣어도되고 li에 넣어도된다.
+
+    list-style-position
+        리스트의 점 등의 위치를 조정
+        inside의 경우 점이 li태그 안에 들어가고
+        outside는 점이 li태그 밖에 생성
+        잘안씀
+        상속이 되기때문에 ul에 넣어도되고 li에 넣어도된다.
+
+    list-style-type
+        circle, disc, square 등의 설정.
+        hangul(한글) hangul-constant(ㄱ,ㄴ,ㄷ,ㄹ..) 도 있다.
+        잘안씀
+
+
+inherit :상속이며 부모의 값을 물려받게 하는 설정
