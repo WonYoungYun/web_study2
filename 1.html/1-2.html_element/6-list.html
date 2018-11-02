@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ul, ol, li, dl, dt, dd</title>
+</head>
+<body>
+    <!-- unorder list -->
+    <ul>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Lorem ipsum dolor sit.</li>
+        <li>Lorem, ipsum.</li>
+    </ul>
+
+    <!-- oreder list -->
+    <!-- type=""을 통해 알파벳순(a,A), 로마숫자(i)로 변경가능 -->
+    <ol>
+        <li>Lorem ipsum dolor sit.</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+    </ol>
+    <hr>
+    <ul>
+        <li><a href="#">menu1</a>
+            <ul>
+            <li><a href="#">submenu1</a></li>
+            <li><a href="#">submenu2</a></li>
+            <li><a href="#">submenu3</a></li>
+            <li><a href="#">submenu4</a></li>
+            </ul>
+        </li>
+        <li><a href="">menu2</a></li>
+        <li><a href="">menu3</a></li>
+        <li><a href="">menu4</a></li>
+    </ul>
+    <hr>
+    <!-- dt안에는 inline 태그만 가능, dd는 상관없다. -->
+    <!-- dt는 용어 dd는 용어에 대한 설명, dl안에는 dt, dd 둘다 있어야한다. 항상 dd가 dt의 수 이상이어야 함 -->
+    <dl>
+        <dt>Lorem, ipsum.</dt>
+        <dd><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ut sit, blanditiis suscipit voluptates unde dolores! Laborum earum sint reprehenderit!</p></dd>
+    </dl>
+</body>
+</html>

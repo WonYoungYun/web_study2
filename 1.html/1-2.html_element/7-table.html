@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Table</title>
+</head>
+<body>
+    <table border width="50%">
+        <caption>table caption</caption>
+        <colgroup>
+            <col width="200">
+            <col width="300">
+            <col>
+        </colgroup>
+        <thead>
+            <tr>
+                <!-- th와 td에 scope속성을 주어 나타내는 범위를 설정 할 수 있다 -->
+                <!-- scope=col , row, colgroup, rowgroup -->
+                <th scope="col">table</th>
+                <th scope="col">header</th>
+                <th scope="col">cell</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- rowspan과 colspan을 통해 cell을 합쳐 표현할 수 있다. -->
+                <td rowspan="2">table</td>
+                <td>data</td>
+                <td>cell</td>
+            </tr>
+            <tr>
+                <td>data</td>
+                <td>cell</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td scope="row">result</td>
+                <td colspan="2">...</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
