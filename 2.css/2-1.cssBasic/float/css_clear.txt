@@ -1,0 +1,22 @@
+clear
+    float 속성을 제거하기 위해 사용
+    clear의 위치는 float를 적용 태그들 바로 끝에, 즉 div속에 img에 float을 줬다면 img들의 맨 마지막에 clear를 줘야 한다.
+
+
+    #area:after{
+        content: '';
+        display: block;
+        clear:both;
+    }
+    를 사용하여 맨 마지막에 clear를 준다.
+
+
+    area에 
+    *zoom:1 속성을 주어 오류를 막을 수 있다. *는 IE6, IE7 Hack
+    hack을 쓰는건 별로 좋은 것은 아님
+
+
+    아니면
+    overflow: hidden; 영역에서 넘치는 부분에 관한 설정 hidden이기 떄문에 지움
+    을 통해서 똑같은 효과를 줄 수 있다.
+    단점: 안에서 코드를 썼는데 선 밖에 나오는 아이콘이면 나오지 않는다.

@@ -1,0 +1,14 @@
+table style
+    border-collapse:
+        테이블의 셀과 셀사이 즉 셀 스페이싱 영역을 조정한다.
+
+    table-layout: fixed
+        각 셀의 영역을 '고정하여' 조정한다.
+
+    caption-side:
+        캡션의 위치를 지정, caption 을 잘 안쓰기 때문에 잘안씀
+
+    empty-cells:hide;
+        내용이 비어있는 cells에 대한 효과를 지정, 
+        border-collapse가 적용되어 있다면 hide를 해도 사라지지 않는다.
+    

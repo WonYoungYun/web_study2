@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>position</title>
+    <style>
+        #box{
+            width: 200px;
+            padding:20px;
+            border: 5px solid black;
+            font: 12px/1.6 verdana,sans-serif
+        }
+        #box:first-letter{
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .area{
+            position:relative;
+            width: 700px;
+            margin:0 auto;
+            border: 5px dashed red;
+        }
+        .a{
+            position: relative;
+            left:0;
+            top:0;
+            background-color: rgba(255,0,0,0.8);
+
+        }
+        .b{
+            position: relative;
+            margin-top: -100px;
+            background-color: rgba(0,255,0,0.8);
+            z-index:1
+        }
+        .c{
+            position: relative;
+            left:100px;
+            margin-top:-50px;
+            background-color: rgba(0,0,255,0.8);
+        }
+    </style>
+</head>
+<body>
+    <div class="area">
+    <div id="box" class="a">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis reprehenderit quia esse minus rem consectetur similique, corrupti sint unde harum sequi repellat tempora dolorem qui, quo dolorum dicta labore vel!
+    </div>
+    <div id="box" class="b">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis reprehenderit quia esse minus rem consectetur similique, corrupti sint unde harum sequi repellat tempora dolorem qui, quo dolorum dicta labore vel!
+    </div>
+    <div id="box" class="c">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis reprehenderit quia esse minus rem consectetur similique, corrupti sint unde harum sequi repellat tempora dolorem qui, quo dolorum dicta labore vel!
+    </div>
+</div>
+    <hr>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum itaque, architecto ab rem odio blanditiis eos voluptate nesciunt pariatur doloribus ratione amet tempora suscipit nemo facilis cum sed voluptatem voluptas, corporis nulla iste autem soluta? Sed perferendis quaerat aliquam error ut a neque odio tempora quasi? Incidunt tenetur fugiat sapiente, veritatis voluptatibus consectetur porro recusandae non et, soluta in minus eaque, omnis fuga quos dolore architecto debitis error. Laudantium corporis nemo perferendis, placeat veritatis excepturi aperiam assumenda saepe neque, asperiores mollitia provident quos numquam. Voluptates facere reiciendis asperiores voluptatum eos ipsam cumque vero modi, labore vitae. Quos, molestiae. Dolorem, obcaecati.</p> 
+</body>
+</html>

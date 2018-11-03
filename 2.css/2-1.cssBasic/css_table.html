@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Table</title>
+    <style>
+        .tb1{
+            width: 800px;
+            table-layout: fixed;
+            /* border-collapse: collapse; */
+        }
+        .tb1 td, .tb1 th{
+            border: 1px solid blue;
+        }
+        .tb1 caption{
+            caption-side: bottom;
+        }
+        .tb1 .ex1,
+        .tb1 .ex2 {
+            empty-cells:hide;
+        }
+    </style>
+</head>
+<body>
+    <table class="tb1">
+        <caption>table caption</caption>
+        <thead>
+            <tr>
+                <th scope="col">table header</th>
+                <th scope="col">table header</th>
+                <th scope="col">table header</th>
+                <th scope="col">table header</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>table data Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, sint?</td>
+                <td>table data</td>
+                <td>table data</td>
+                <td>table data</td>
+            </tr>
+            <tr>
+                <td>table data</td>
+                <td>table data</td>
+                <td>table data</td>
+                <td>table data</td>
+            </tr>
+            <tr>
+                <td>table data</td>
+                <td>table data</td>
+                <td>table data</td>
+                <td>table data</td>
+            </tr>
+            <tr>
+                <td>table data</td>
+                <td>table data</td>
+                <td class="ex1"></td>
+                <td class="ex2"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Box Models</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 600px;
+            /* border: 1px solid black;
+            padding:20px; */
+            margin:30px;
+            background-color: lime;
+        }
+        .box2{
+            border:5px solid black;
+            padding:10px, 20px;
+        }
+        .box3{
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, aliquam.
+    </div>
+    <div class="box box2">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam recusandae at dicta quisquam illum blanditiis accusamus nulla distinctio obcaecati minima.
+    </div>
+    <div class="box box2 box3">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam recusandae at dicta quisquam illum blanditiis accusamus nulla distinctio obcaecati minima.
+    </div>
+</body>
+</html>

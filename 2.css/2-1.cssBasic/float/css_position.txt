@@ -1,0 +1,26 @@
+position
+    relative | absolute | fixed | static
+    absolute: 절대적인 위치, 감싸져 있는 태그의 끝부분 부터 계산
+    relative: 상대적인 위치, 현재위치를 기준으로 움직인다.
+    fixed: absolute와 비슷하지만, 감싸는 태그를 기준으로 하는 absolute와 달리 fixed는 무조건 가장 밖을 기준으로 움직인다. 스크롤을 내리더라도 브라우저상의 그위치에 고정되어있다.
+
+    z-index
+        태그가 겹칠 경우 가장 마지막에 설정된 태그가 제일 위에 올라오지만 z-index를 통해 우선순위 를 정해 줄 수 있다. 숫자가 클수록 위로 올라감
+
+    레이아웃을 짤 경우
+     태그들을 감싸는 태그는 position: relative를 주고 그안에서 absolute나 relatvie로 위치를 잡아준다.
+
+     relative속 relative인 경우
+     margin을 통해 태그들을 겹칠 수 있다.
+
+
+    태그속 태그에 padding을 주는 것으로 box-sizing:border-box와 같은 효과를 나타낼 수 있다.
+
+    absolute를 주고 값은 %로 줄때 그 지점에서부터 시작하기 때문에 크기를 맞춰주기 힘들다.
+    따라서 margin 을 가지고 왼쪽으로 -width/2만큼 위쪽으로 -height/2만큼 이동하면 중앙에 배치가 된다.
+    relative의 경우는 현재 위치를 기준으로 움직이기 떄문에 html과 body의 width:100%, height:100%로 컨텐츠의 크기를 지정해줘야 중앙에 배치가 된다.
+
+
+    크기가 없을경우 중앙배치?
+    absolute나 fixed 경우 left, right, top, bottom에 같은 값을 주면 중앙에 배치가 된다.
+    모바일에서 팜업창을 띄울때 사용

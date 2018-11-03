@@ -1,0 +1,37 @@
+BoxModels
+    width와 height로 컨텐츠의 크기를 조정할 수 있다.
+    
+    border
+        컨텐츠의 테두리에 대한 설정
+        border-style: 선에 타입에 대한 설정
+            solid | dash | dotted | double 등등..
+
+        border-color: 선의 색상에 대한 설정
+        border-width: 선의 굵기에 대한 설정
+
+    padding
+        내용과 border사이의 공간
+    
+    margin 
+        border를 기준으로 밖의 공간
+        box와 box사이의 마진은 겹쳐서 출력되며, 더큰값의 속성으로 적용된다.
+
+        padding과 border를 넣으면 지정한 컨텐츠에서 크기가 더 커지게 된다.
+        설정 값을 각자 주는 것으로 공간에 대한 설정은 따로 넣을 수 있다.
+            padding: 100px, 50px, //top,bottom은 100px, right,left는 50px
+            marign: 100px, 50px, 30px//top은 100px, right,left는 50px, bottom은 30px
+
+    box-sizing
+        박스 크기에 대한 설정,
+        border-box를 넣으면 padding과 border를 넣어도 박스가 더 커지지 않는다.
+        CSS3의 기술이기 때문에 모바일에는 써도 되지만 웹페이지는 IE8이하 에서는 적용되지 않음
+
+
+    box모델링은 블록성질을 가진 태그에서만 적용 시켜야 함.
+    inline태그일 경우 display:block, inline-block을 넣어주면 블록성질을 가진다.
+
+*{
+    margin:0;
+    padding:0;
+    /*스타일의 초기화*/
+}
