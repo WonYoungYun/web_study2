@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Box1</title>
+    <style>
+        /* reset style */
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        body,h1,h2,p,ul,li{
+            margin:0;
+            padding: 0;
+        }
+        body, h1, h2, h3{
+            font-family: 'Malgun Gothic', sans-serif;
+            font-size: 12px;
+        }
+
+        /* style */
+        .section{
+            position: relative;
+            margin:20px;
+            border: 1px solid #ccc;
+        }
+        .section .hx{
+            border: 1px solid #fff;
+            padding: 8px;
+            background-color: #eee;
+            color: #333;
+            font-size: 1.1em;
+            font-weight: bold;
+
+        }
+        .section .tx{
+            border-top: 1px solid #ccc;
+            padding: 8px;
+            color:#555;
+            line-height: 1.5em;
+            list-style: none;
+        }
+        .section .section_more{
+            position:absolute;
+            right:8px;
+            top:10px;
+        }
+        .section .section_more a{
+            position: relative;
+            color: #666;
+            text-decoration: none;
+            letter-spacing: -1px;
+        }
+        .section .section_more a .ico{
+            position: absolute;
+            left: -8px;
+            top:3px;
+            display: block;
+            width: 0px;
+            height: 0px;
+            border: 10px solid black;
+            border-width: 5px 0 5px 5px;
+            border-color: transparent transparent transparent #aaa;
+        }
+    </style>
+</head>
+<body>
+    <!-- UI Object -->
+    <div class="section">
+        <ul>
+            <h2 class="hx">제목</h2>
+            <li class="tx">내용</li>
+            <li class="tx">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam placeat similique sint esse tempora veniam corporis saepe repudiandae, natus neque!</li>
+            <li class="tx">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum debitis veniam quidem soluta voluptas at quos minima unde repudiandae, iste ab tenetur possimus dolores non. Veniam ipsum praesentium non nulla, eos fugit excepturi autem corporis totam reiciendis distinctio facilis officia.</li>
+            <li class="tx">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, eligendi.</li>
+        </ul>
+        <p class="section_more"><a href="#" ><span class="ico"></span>더보기</a></p>
+    </div>
+    <!-- //UI Object -->
+</body>
+</html>
