@@ -40,3 +40,12 @@ ul,ol{list-style: none;}
 em,address{font-style: normal}
 a{text-decoration: none}
 a:hover,a:active,a:focus{text-decoration: underline}
+
+
+
+
+
+
+* > body{
+    all:unset;
+}

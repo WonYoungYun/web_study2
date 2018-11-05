@@ -15,6 +15,7 @@ BoxModels
     margin 
         border를 기준으로 밖의 공간
         box와 box사이의 마진은 겹쳐서 출력되며, 더큰값의 속성으로 적용된다.
+        margin은 block에서 4방향이 변경되고 inline에서는 좌우 만 변경된다.
 
         padding과 border를 넣으면 지정한 컨텐츠에서 크기가 더 커지게 된다.
         설정 값을 각자 주는 것으로 공간에 대한 설정은 따로 넣을 수 있다.

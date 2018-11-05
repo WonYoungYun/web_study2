@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>button</title>
+    <style>
+        /* reset */
+        html, body{width: 100%;height: 100%;}
+        body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding: 0;}
+        body,input,textarea,select,button,table{font-family: 'Malgun Gothic',Dotum,AppleGothic,sans-serif;font-size:12px}
+        img,fieldset{border:0}
+        ul,ol{list-style: none;}
+        em,address{font-style: normal}
+        a{text-decoration: none}
+        a:hover,a:active,a:focus{text-decoration: underline}
+
+        /* style */
+        .area{
+            margin:30px;
+        }
+        .btn_pack{
+            display: inline-block;
+        }
+        .btn_pack a,
+        .btn_pack button,
+        .btn_pack input{
+            display: inline-block;
+            height: 24px;
+            border:0;
+            padding:0;
+            padding-left: 10px;
+            padding-right: 10px;
+            text-decoration: none;
+            color: #888;
+            background: #eee;
+            border-radius: 10%;
+            line-height: 24px;
+            cursor: pointer;
+        }
+        .btn_pack a:hover,
+        .btn_pack button:hover,
+        .btn_pack input:hover{
+            color:black;
+        }
+        .btn_pack .large{
+
+        }
+        .btn_pack.large a,
+        .btn_pack.large button,
+        .btn_pack.large input{
+            height: 30px;
+            line-height: 30px;
+            font-size:1.2em;
+        }
+    </style>
+</head>
+<body>
+    <!-- a나 button이나 input이나 같은 형태를 보여주기위해 btn_pack이라는 span으로 감싸준다 -->
+    <div class="area">
+        <span class="btn_pack">
+            <a href="#">anchore</a>
+        </span>
+        <span class="btn_pack">
+            <button>button</button>
+        </span>
+        <span class="btn_pack">
+            <input type="button" value="input">
+        </span>
+    </div>
+    <hr>
+    <div class="area">
+            <span class="btn_pack large">
+                <a href="#">anchore</a>
+            </span>
+            <span class="btn_pack large">
+                <button>button</button>
+            </span>
+            <span class="btn_pack large">
+                <input type="button" value="input">
+            </span>
+    </div>
+</body>
+</html>

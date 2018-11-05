@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>list3</title>
+
+    <style>
+        /*reset*/
+        html, body{width: 100%;height: 100%;}
+        body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding: 0;}
+        body,input,textarea,select,button,table{font-family: 'Malgun Gothic',Dotum,AppleGothic,sans-serif;font-size:12px}
+        img,fieldset{border:0}
+        img{vertical-align:top}
+        ul,ol{list-style: none;}
+        em,address{font-style: normal}
+        a{text-decoration: none}
+        a:hover,a:active,a:focus{text-decoration: underline}
+
+        /* style */
+        #content{
+            width: 60%;
+            margin: 0 auto;
+        }
+        #content h1{
+            padding: 20px 0;
+            border-bottom: 1px solid black;
+        }
+        .fixed_img_row{}
+        .fixed_img_row li {
+            padding: 15px 0;
+            border-bottom: 1px solid #ccc;
+        }
+        .fixed_img_row li:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .fixed_img_row li a{
+            color:#333;
+        }
+        .fixed_img_row li a .thumb{
+            position: relative;
+            float:left;
+            width: 122px;
+            background-color: #eee;
+            line-height: 89px;
+            text-align: center;
+        }
+        .fixed_img_row li a .thumb img{}
+        .fixed_img_row li a .thumb em{
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            opacity: .8;
+            background-color: #000;
+            color:#eee;
+            font-weight: bold;
+
+
+        }
+        .fixed_img_row li a:hover .thumb em{
+            display: block;
+        }
+        .fixed_img_row li a strong{
+            display: block;
+            margin-left: 130px;
+            margin-bottom: 6px;
+        }
+        .fixed_img_row li p {
+            margin-left: 130px;
+            margin-bottom: 5px;
+            color:#666;
+            line-height: 1.5
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <h1>Fixed Image + Text Row List</h1>
+        <div class="fixed_img_row">
+            <ul>
+                <li>
+                    <a href="">
+                        <span class="thumb">
+                            <img src="img/penguin3.jpg" alt="펭귄">
+                            <em>Category</em>
+                        </span>
+                        <strong>이미지의 너비가 고정폭이어야 할 때</strong>
+                    </a>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam facilis nisi ipsa harum quibusdam. Laboriosam rem, quas amet enim maiores mollitia facere, veniam velit numquam, repellat aut nisi blanditiis. Saepe!</p>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="thumb">
+                            <img src="img/penguin3.jpg" alt="펭귄">
+                            <em>Category</em>
+                        </span>
+                        <strong>이미지의 너비가 고정폭이어야 할 때</strong>
+                    </a>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non rem eum ab, temporibus magnam perspiciatis, voluptate assumenda, repellendus nisi corrupti tempore fugit. Dolorum sunt nostrum aperiam illum ipsa officiis, quia accusantium corrupti quos error ipsam voluptatibus deleniti quae facilis. Neque enim nam, culpa ex deserunt aperiam nobis, unde officiis ipsa eum ad, qui at velit et natus vel fugiat. Amet minus necessitatibus deserunt sint nisi quia quo velit corrupti fugit aspernatur ullam error, iste odio eaque iusto natus quas assumenda tempora et magni a? Consequatur necessitatibus id quisquam voluptatum laudantium consectetur vel nam doloribus! Et modi amet delectus corporis quos!
+                    </p>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="thumb">
+                            이미지가 없는 항목
+                            <em>Category</em>
+                        </span>
+                        <strong>이미지의 너비가 고정폭이어야 할 때
+                        </strong>
+                    </a>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam facilis nisi ipsa harum quibusdam. Laboriosam rem, quas amet enim maiores mollitia facere, veniam velit numquam, repellat aut nisi blanditiis. Saepe!</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
