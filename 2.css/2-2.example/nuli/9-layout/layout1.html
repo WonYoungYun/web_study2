@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>layout</title>
+    <style>
+        /*reset*/
+        html, body{width: 100%;height: 100%;}
+        body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding: 0;}
+        body,input,textarea,select,button,table{font-family: 'Malgun Gothic',Dotum,AppleGothic,sans-serif;font-size:12px}
+        img,fieldset{border:0}
+        img{vertical-align:top}
+        table{border-collapse:collapse}
+        ul,ol{list-style: none;}
+        em,address{font-style: normal}
+        a{text-decoration: none}
+        a:hover,a:active,a:focus{text-decoration: underline}
+
+        /* style */
+        #wrap{
+            width: 970px;
+            margin: 0 auto;
+            background-color: gray;
+        }
+        #header{
+            padding:20px;
+            background-color: red;
+        }
+        #container{
+            padding-bottom: 30px;
+            background-color: lime;
+        }
+        #container:after{
+            content:'';
+            display: block;
+            clear:both;
+        }
+        #container #content{
+            float:right;
+            width: 600px;
+            background-color:blue
+        }
+        #container #content .inn{
+            padding:20px;
+        }
+        #container .aside{
+            float:left;
+            width: 370px;
+            background-color:green
+        }
+        #container .aside .inn{
+            padding:20px;
+        }
+        #footer{
+            padding:20px;
+            background-color:silver;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <!-- header -->
+        <div id="header">
+            <h1>LOGO</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam enim sunt corporis omnis adipisci culpa iure velit tempore beatae eligendi.</p>
+        </div>
+        <!--//header -->
+        <!-- container -->
+        <div id="container">
+            <!-- content -->
+            <div id="content">
+                <div class="inn">
+                    <h2>Content</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur amet saepe accusamus quidem commodi velit. Magnam, laboriosam! Eos saepe, totam quisquam quasi suscipit qui omnis impedit corrupti non doloremque delectus voluptas officiis, deserunt dolorem excepturi optio aspernatur tenetur iusto nemo molestiae magni architecto nisi doloribus asperiores! Similique quae officia libero!</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur amet saepe accusamus quidem commodi velit. Magnam, laboriosam! Eos saepe, totam quisquam quasi suscipit qui omnis impedit corrupti non doloremque delectus voluptas officiis, deserunt dolorem excepturi optio aspernatur tenetur iusto nemo molestiae magni architecto nisi doloribus asperiores! Similique quae officia libero!</p>
+                </div>
+            </div>
+            <!-- //content -->
+            <!-- aside -->
+            <div class="aside">
+                <div class="inn">
+                    <h2>Aside</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vitae molestias sed! Amet exercitationem rem error porro corporis ex laudantium placeat facere! Velit possimus quas iste magni expedita doloremque repellendus!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vitae molestias sed! Amet exercitationem rem error porro corporis ex laudantium placeat facere! Velit possimus quas iste magni expedita doloremque repellendus!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vitae molestias sed! Amet exercitationem rem error porro corporis ex laudantium placeat facere! Velit possimus quas iste magni expedita doloremque repellendus!</p>
+                </div>
+            </div>
+            <!-- //aside -->
+        </div>
+        <!-- //container -->
+        <!-- footer -->
+        <div id="footer">
+            <address></address>
+            <p>Copyright &copy;</p>
+        </div>
+        <!-- //footer -->
+
+    </div>
+</body>
+</html>

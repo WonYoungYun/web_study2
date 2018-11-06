@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+    <style>
+        /*reset*/
+        html, body{width: 100%;height: 100%;}
+        body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding: 0;}
+        body,input,textarea,select,button,table{font-family: 'Malgun Gothic',Dotum,AppleGothic,sans-serif;font-size:12px}
+        img,fieldset{border:0}
+        img{vertical-align:top}
+        table{border-collapse:collapse}
+        ul,ol{list-style: none;}
+        em,address{font-style: normal}
+        a{text-decoration: none}
+        a:hover,a:active,a:focus{text-decoration: underline}
+
+        legend, .blind{display: block; position: absolute; left:0; top:-9999em;}
+
+        /* style */
+        #content{
+            width: 980px;
+            margin: 0 auto;
+        }
+        .bg{
+            display:none;
+            position:fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-color: rgba(0,0,0,.6)
+        }
+        .login{
+            display:none;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left:-192px;
+            margin-top: -230px;
+            z-index:100;
+            width: 384px;
+            border:2px solid #555;
+            background-color: #fff;
+        }
+        .login fieldset{
+            padding: 28px 28px 10px;
+        }
+        .login fieldset .field{
+            margin-bottom:5px;
+        }
+        .login fieldset .field .inp_field{
+            width: 326px;
+            height: 28px;
+            border:1px solid #b7b7b7;
+            border-color: #b7b7b7 #e1e1e1 #e1e1e1 #b7b7b7;
+            color: #767676;
+            font: bold 11px/28px verdana,sans-serif;
+            text-indent: 9px;
+        }
+        .login fieldset .area{
+            padding-top:5px;
+        }
+        .login fieldset .area:after{
+            content:'';
+            display: block;
+            clear:both;
+        }
+        .login fieldset .chk_field{
+            float:left;
+            margin-top:7px;
+            color:#767676;
+            font:11px '돋움',dotum,helvetica,sans-serif;
+        }
+        .login fieldset .chk_field input{
+            vertical-align: middle;
+        }
+        .login fieldset .btn_area{
+            float:right;
+        }
+        .login fieldset .btn_area .btn_submit{
+            background:none;
+            background-color:#555;
+            border: 0 none;
+            border-radius: 5px;
+            padding-left:30px;
+            cursor: pointer;
+        }
+        .login fieldset .btn_area .btn_submit span{
+            display: block;
+            height: 32px;
+            color: #fff;
+            padding-right: 30px;
+            font-weight: bold;
+            line-height: 32px;
+        }
+        .login .nav{
+            padding:14px;
+            background-color: #fafafa;
+            border-top: 1px solid #d9d9d9;
+            text-align: center;
+        }
+        .login .nav li{
+            display: inline;
+            margin-right: 8px;
+            padding-right:10px;
+            border-right:1px solid #c3c3c3;
+        }
+        .login .nav li:nth-last-child(1){
+            margin-right: 0;
+            padding-right: 0;
+            border:none;
+        }
+        .login .nav li a{
+            color:#767676;
+        }
+        .login .btn_close{
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .login .btn_close button{
+            width: 26px;
+            height: 26px;
+            background:none;
+            border: 0 none;
+            color: #cacaca;
+            font: bold 12px/26px  verdana, sans-serif;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="content">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores aspernatur quod iure fugiat laborum ipsum earum eos maxime omnis quaerat facere commodi sint, nihil impedit qui accusantium corrupti ut et? Vitae molestias fugiat modi amet numquam corrupti earum voluptate hic delectus quisquam temporibus fuga asperiores deserunt quidem quae culpa rerum, quam error dolore dignissimos! Error unde consequuntur id? Aspernatur, eaque dolorum? Exercitationem commodi, dicta dolore voluptatum inventore non maxime excepturi est, eum illo ipsum sint tempore neque vitae impedit et suscipit pariatur velit obcaecati praesentium voluptas. Consequatur ex iste corporis placeat laboriosam, perferendis ipsam. Necessitatibus atque distinctio animi vitae consectetur. Cum quia, soluta architecto illo, perferendis dolore, vitae aut laudantium voluptatum delectus a commodi saepe. Ipsum dolorem sunt sapiente labore adipisci molestiae, autem facere repellat dolor non porro inventore libero nesciunt voluptas ad ducimus earum unde nobis similique. Eum mollitia dolore tenetur dolores quibusdam numquam assumenda. Labore, ducimus? Perferendis neque consequuntur enim maxime saepe aspernatur accusantium rerum laborum, temporibus, magnam quasi, voluptate dolore natus dolorum accusamus iure omnis dolores similique! Nobis ab explicabo maiores autem repellendus, consequatur assumenda voluptates in, aut reprehenderit et praesentium nostrum quam exercitationem dicta accusamus nihil mollitia? Ad dolorem ipsa perferendis eius quisquam asperiores? Architecto illum quasi voluptate nobis! Iure, voluptatum debitis ut ducimus magni amet praesentium. Corrupti, beatae autem pariatur perferendis cumque, labore eligendi libero reiciendis id atque, rem quidem. Molestias distinctio voluptatem alias explicabo iste, fugit dolorem at illum, eligendi blanditiis, aliquam qui. Perferendis esse, harum vitae ab laboriosam recusandae, atque nesciunt tenetur molestias inventore quod ipsa voluptate beatae. Natus tenetur obcaecati ipsa eligendi atque saepe est molestias similique, ut harum fugit rem ad amet ex ullam. Consequuntur earum pariatur quas, ut veritatis porro quam quidem itaque cumque expedita. Consequuntur placeat ducimus, autem commodi quod ipsum non ratione velit similique unde. Non, vitae deserunt.</p>
+        <hr>
+        <p><button class="btn_login">로그인</button></p>
+        <div class="login">
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>로그인</legend>
+                    <p class="field">
+                        <label class="blind" for="user_id">ID</label>
+                        <input type="text" id="user_id" value="" placeholder="ID" class="inp_field">
+                    </p>
+                    <p class="field">
+                        <label class="blind" for="user_pwd">PASSWORD</label>
+                        <input type="password" id="user_pwd" value="" placeholder="PASSWORD"  class="inp_field">
+                    </p>
+                    <div class="area">
+                        <p class="chk_field">
+                            <input type="checkbox" id="stay" value="">
+                            <label for="stay">로그인 유지</label>
+                        </p>
+                        <p class="btn_area">
+                            <button type="submit" class="btn_submit"><span>로그인</span></button>
+                        </p>
+                    </div>
+                </fieldset>
+                <div class="nav">
+                    <ul>
+                        <li><a href="#">아이디./비밀번호 찾기</a></li>
+                        <li><a href="#">회원 가입</a></li>
+                        <li><a href="#">Open ID</a></li>
+                    </ul>
+                </div>
+            </form>
+            <p class="btn_close"><button type="button">X</button></p>
+        </div>
+        <div class="bg"></div>
+    </div>
+    <script>
+        const t = document.getElementsByClassName('btn_login');
+        const bg = document.getElementsByClassName('bg');
+        const login = document.getElementsByClassName('login');
+        const close = document.getElementsByClassName('btn_close');
+        t[0].addEventListener('click', (e)=>{
+            bg[0].style.display='block';
+            login[0].style.display='block';
+        });
+        close[0].addEventListener('click', (e)=>{
+            bg[0].style.display='none';
+            login[0].style.display='none';
+        });
+    </script>
+</body>
+</html>
