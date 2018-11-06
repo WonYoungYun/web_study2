@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>list</title>
+    <style>
+        /*reset*/
+        html,body{width: 100%; height: 100%;}
+        body,ul,li, p{margin:0; padding:0}
+        body{font-family: 'Malgun Gothic',sans-serif;font-size: 12px;}
+        li{list-style:none}
+        em{font-style: normal}
+        img{vertical-align: top}
+        a{text-decoration: none;}
+        a:hover,a:focus{text-decoration: underline}
+        
+        /* style */
+        #content{width: 840px; margin: 0 auto}
+        .car_list{margin-bottom:15px;}
+        .car_list ul{}
+        .car_list ul:after{
+            content: '';
+            display:block;
+            clear: both;
+        }
+        .car_list li{float:left; width: 192px; margin:17px 17px 0 0; color:#222}
+        .car_list li a{display:block; position:relative; color:inherit;}
+        .car_list li a:hover{
+            color:#118eff;
+        }
+        .car_list li a .thumb {}
+        .car_list li a .thumb img{width:100%}
+        .car_list li a .txt{display:block; margin-top:5px;padding: 0 4px; line-height: 18px;}
+        .car_list li a .ico{display:block; position: absolute; top:84px; right:8px; width: 23px; height: 23px; background:url(img/ico.png) no-repeat; text-indent: -9999px;}
+        .car_list li a .ico.mov{background-position: -70px 0}
+        .car_list li a .ico.pic{background-position: -40px 0}
+    </style>
+</head>
+<body>
+    <div id="content">
+        <div class="car_list">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="thumb"><img src="img/thumb1.jpg" alt="수입 하이브리드 차, 누가 제일 잘 나가나?"></span>
+                        <em class="txt">수입 하이브리드 차, 누가 제일 잘 나가나?
+                            </em>
+                        <span class="ico mov">동영상</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="thumb"><img src="img/thumb2.jpg" alt="독일차의 역습 ″경쟁자가 없다″"></span>
+                        <em class="txt">독일차의 역습 ″경쟁자가 없다″</em>
+                        <span class="ico pic">사진</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="thumb"><img src="img/thumb3.jpg" alt="허머도 울고갈 쉐보레 '실버라도 ZH2'"></span>
+                        <em class="txt">허머도 울고갈 쉐보레 '실버라도 ZH2'</em>
+                        <span class="ico pic">사진</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="thumb"><img src="img/thumb4.jpg" alt="또 '디스'당한 기아차..이번엔 쏘렌토·쏘울 조롱"></span>
+                        <em class="txt">또 '디스'당한 기아차..이번엔 쏘렌토·쏘울 조롱</em>
+                        <span class="ico pic">사진</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero dolore ab commodi est fuga dicta, rem ipsa. Libero debitis, dolores vitae voluptatem id eaque, beatae natus odio modi iste voluptatibus? Ad nam doloribus odit optio, numquam quisquam consequatur corporis dignissimos quam repudiandae magni molestias consectetur tempore pariatur aut quis qui?</p>
+    </div>
+
+</body>
+</html>

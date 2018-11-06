@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>list6</title>
+    <style>
+        /*reset*/
+        html, body{width: 100%;height: 100%;}
+        body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding: 0;}
+        body,input,textarea,select,button,table{font-family: 'Malgun Gothic',Dotum,AppleGothic,sans-serif;font-size:12px}
+        img,fieldset{border:0}
+        img{vertical-align:top}
+        ul,ol{list-style: none;}
+        em,address{font-style: normal}
+        a{text-decoration: none}
+        a:hover,a:active,a:focus{text-decoration: underline}
+
+        #content{
+            width: 800px;
+            margin: 0 auto;
+        }
+        .lst_app {
+        }
+        .lst_app ul:after{
+            content: '';
+            display:block;
+            clear:both;
+        }
+        .lst_app li {
+            float:left;
+            margin:10px;
+        }
+        .lst_app li .thmb{
+            width: 180px;
+            height: 180px;
+            background-color: #ccc;
+        }
+        .lst_app li a{
+            text-decoration: none;
+        }
+        .lst_app li .btn_area{
+            padding: 15px 0;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <ul class="lst_app">
+            <li>
+                <div class="thmb">
+                    <a href="#">
+                    </a>
+                </div>
+                <div class="btn_area">
+                    <a href="#">
+                        <button>수정</button>
+                    </a>
+                    <a href="#">
+                        <button>삭제</button>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="thmb">
+                </div>
+                <div class="btn_area">
+                    <a href="#">
+                        <button>이미지 올리기</button>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="thmb">
+                </div>
+                <div class="btn_area">
+                    <a href="#">
+                        <button>이미지 올리기</button>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="thmb">
+                </div>
+                <div class="btn_area">
+                    <a href="#">
+                        <button>이미지 올리기</button>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
