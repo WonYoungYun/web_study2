@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>transform</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        body{
+            perspective: 500px;
+            perspective-origin: 50% 50%;
+            font: 12px 'Malgun Gothic',sans-serif
+
+        }
+        #wrap{
+            width: 900px;
+            margin: 0 auto;
+        }
+        #wrap .pic{
+            width: 300px;
+            
+        }
+        #wrap .pic img{
+            width: 100%;
+            transition: all 1s;
+            transform-origin: 0 0 ;
+        }
+        #wrap .pic:hover img{
+            /* transform: translate(200px, 100px); */
+            /* transform: rotate3d(1,0,1,360deg) */
+            /* transform: scaleZ(2) rotateY(90deg) */
+            /* transform: skew(30deg,15deg); */
+            /* transform: matrix(1,0,0,1,0,0)
+             scaleX skewY skewX scaleY translateX trnaslateY  */
+        }   
+        /*
+        translate, translate3d 위치이동
+            3d를 사용하기위해서는 perspective로 z축의 높이를 정해줘야한다.
+        rotate, rotate3d 회전
+        scale, scale3d
+        skew    찌그러트리기
+        matrix, matrix3d 몇가지 값을 한번에 적용
+            matrix3d 관련 http://ds-overdesign.com/transform/matrix3d.html 
+        perspective 깊이, 기준을 정해주지 않으면 정중앙으로 움직임
+        perspective-origin 깊이기준
+        transform-origin transform의 기준
+        transform-style 애니메이션중 3d모양 유지
+        */
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="pic"><img src="img/photo.jpg" alt=""></div>
+    </div>
+</body>
+</html>

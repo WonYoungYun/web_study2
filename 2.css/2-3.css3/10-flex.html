@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>flex</title>
+    <style>
+        body{
+            font: 12px 'Malgun Gothic',sans-serif
+
+        }
+        #wrap{
+            width: 900px;
+            margin: 0 auto;
+            display: flex;
+        }
+        #wrap h1{
+            flex: 1;
+        }
+        #wrap .text{
+            flex: 4;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h1>Flex example</h1>
+        <div class="text">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima harum odit vel consequatur nulla architecto, cum eligendi accusamus voluptatem eaque?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa alias quam pariatur culpa porro nihil sed sapiente, iure omnis perferendis.</p>
+        </div>
+    </div>
+</body>
+</html>

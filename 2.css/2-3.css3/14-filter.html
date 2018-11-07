@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>transform</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        body{
+            font: 12px 'Malgun Gothic',sans-serif
+        }
+        #wrap{
+            width: 900px;
+            margin: 0 auto;
+        }
+        .filter{
+            float:left;
+            width: 300px;
+            border:2px solid black;
+            box-sizing: border-box;
+        }
+        .filter img{
+            width: 100%;
+            transition: all 1s;
+            cursor: pointer;
+        }
+        .filter.blur img:hover{
+            filter:blur(3px);
+        }
+        .filter.brightness img:hover{
+            filter:brightness(1.5)
+        }
+        .filter.contrast img:hover{
+            filter:contrast(1.5)
+        }
+        .filter.drop-shadow img:hover{
+            filter:drop-shadow(-20px 20px 0 rgba(0,0,0,.4))
+        }
+        .filter.grayscale img:hover{
+            filter:grayscale(1);
+        }
+        .filter.hue-rotate img:hover{
+            filter:hue-rotate(360deg)
+        }
+        .filter.invert img:hover{
+            filter:invert(1)
+        }
+        .filter.opacity img:hover{
+            filter:opacity(.5)
+        }
+        .filter.sepia img:hover{
+            filter:sepia(1)
+        }
+        .filter strong{
+            display: block;
+            padding: .3em .5em;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="filter blur"><img src="img/photo.jpg" alt=""><strong>blur</strong></div>
+        <div class="filter brightness"><img src="img/photo.jpg" alt=""><strong>brightness</strong></div>
+        <div class="filter contrast"><img src="img/photo.jpg" alt=""><strong>contrast</strong></div>
+        <div class="filter drop-shadow"><img src="img/photo.jpg" alt=""><strong>drop-shadow</strong></div>
+        <div class="filter grayscale"><img src="img/photo.jpg" alt=""><strong>grayscale</strong></div>
+        <div class="filter hue-rotate"><img src="img/photo.jpg" alt=""><strong>hue-rotate</strong></div>
+        <div class="filter invert"><img src="img/photo.jpg" alt=""><strong>invert</strong></div>
+        <div class="filter opacity"><img src="img/photo.jpg" alt=""><strong>opacity</strong></div>
+        <div class="filter sepia"><img src="img/photo.jpg" alt=""><strong>sepia</strong></div>
+    </div>
+</body>
+</html>
