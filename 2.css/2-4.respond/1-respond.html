@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsible web</title>
+    <style>
+        body{
+            color:#555;
+            font:12px/1.5 'Trebuchet MS',sans-serif;
+        }
+        #wrap{
+            width: 970px;
+            margin: 0 auto;
+            padding: 0 15px;
+            box-sizing: border-box;
+        }
+        @media screen and (min-width: 1200px){
+            #wrap{
+                width: 1200px;
+            }
+        }
+        @media screen and (max-width: 970px){
+            #wrap{
+                width: auto;
+            }
+        }
+        @media screen and (max-width: 970px) and (min-width: 481px){
+            body{
+                background-color: yellow;
+            }
+        }
+        @media screen and (max-width: 480px){
+            body{
+                font-size: 14px;
+            }
+        }
+        @media screen and (orientation: portrait){
+            h1:after{
+                content:' 세로보기';
+                font-size: .8em;
+                color:blue;
+            }
+        }
+        @media screen and (orientation: landscape){
+            h1:after{
+                content:' 가로보기';
+                font-size: .8em;
+                color:red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h1>LOGO</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet architecto porro itaque voluptatibus vitae amet odit aspernatur optio libero soluta.</p>
+    </div>
+</body>
+</html>

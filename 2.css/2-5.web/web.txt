@@ -1,0 +1,5 @@
+modernizr
+    html5나 css3에서 실행이 안되는 코드를 확인가능 modernizr를 쓸때는 html에 class="no-js"를 넣어줘야 한다.
+
+
+http://placehold.it/400x600
